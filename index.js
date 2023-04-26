@@ -43,3 +43,16 @@ function displaybooks(books) {
   }
 }
 displaybooks(booksList);
+const addBtn = document.querySelector('.addbtn');
+addBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (bookTitle.value.trim() !== '' && bookAuthor.value.trim() !== '') {
+    const list = {
+      title: bookTitle.value,
+      author: bookAuthor.value,
+    };
+    booksList.push(list);
+    setLocalStorage(booksList);
+    displaybooks(booksList);
+  }
+});
