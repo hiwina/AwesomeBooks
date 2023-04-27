@@ -1,1 +1,82 @@
-/* Styles */
+body {
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  width: 50%;
+  align-items: flex-end;
+  margin-left: 8em;
+}
+
+#book-form,
+h2 {
+  text-align: center;
+  margin-right: 3em;
+}
+
+#book-list {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background: white;
+  text-align: center;
+}
+
+#author {
+  margin-top: 1em;
+}
+
+.addbtn {
+  margin-top: 1em;
+  border: 2px solid black;
+  height: 30px;
+  width: 100px;
+  font-size: 18px;
+}
+
+.flexing {
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  gap: 5px;
+  background: #c5c5c5;
+  margin-top: 20px;
+}
+
+.deleteBook {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 30px;
+  border: 1px solid black;
+  border: none;
+}
+
+.centers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.removeButton {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 3px solid black;
+}
+
+input {
+  border: 2px solid black;
+  height: 38px;
+  font-size: 20px;
+}
+
+.warning {
+  background: rgb(227, 172, 172);
+}
