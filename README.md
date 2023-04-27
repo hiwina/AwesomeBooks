@@ -15,7 +15,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -63,11 +62,7 @@
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **[Add book to the collection.]**
 - **[Remove book from the collection.]**
@@ -75,16 +70,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](https://hiwina.github.io/AwesomeBooks)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -101,7 +87,6 @@ vscode editor (you can download it from https://code.visualstudio.com/download)
 
 ### Setup
 
-
 create a folder and name it 'my-folder'
 open with vscode editor > right click on the folder and select >open in integrated terminal option
 cd my-folder
@@ -111,15 +96,6 @@ git clone https://github.com/hiwina/AwesomeBooks.git
 ### Install
 
 Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
