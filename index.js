@@ -106,7 +106,6 @@ const onload = () => {
   addBook.classList.remove('active');
   header.style.display = 'block';
 };
-
 window.addEventListener('load', onload);
 window.addEventListener('load', displayDate);
 bookList.addEventListener('click', onload);
@@ -115,7 +114,7 @@ addBook.addEventListener('click', () => {
   bookList.classList.remove('active');
   contact.classList.remove('active');
   contactSection.style.display = 'none';
-  addSection.style.display = 'flex';
+  addSection.style.display = 'block';
   addBook.classList.add('active');
   displayArea.style.display = 'none';
   header.style.display = 'none';
