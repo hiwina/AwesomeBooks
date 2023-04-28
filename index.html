@@ -4,20 +4,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/yeti/bootstrap.min.css"> -->
     <title>'Awesome Books'</title>
 </head>
-<body>
+<body >
+    <header>
+      <nav class="nav-container">
+        <h1 id="header-name">Awesome Books</h1>
+        <ul class="navItems">
+          <li ><a href="#lists" id="list">List</a></li>
+          <li ><a href="#adds" id="add-new">Add new</a></li>
+          <li ><a href="#contacts" id="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <p id="date"></p>
+
+    <section class="list" id="lists">
     <h1 class="text-center">All Awesome books</h1>
      <div id="book-list">
      </div>
-
+    </section>
+    <section id="adds">
     <form id="book-form">
         <h2 >Add a new book</h2>
         <input name="title" id="title"  placeholder="Title"></input>
         <input name="author" id="author"  placeholder="Author"></input>
         <button type="submit" class="addbtn">Add</button>
     </form>
+    </section>
+    <section class="contact" id="contacts">
+        <h1 class="heading">Contact information</h1>
+        <p id="p">Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
+        <ul id="co-ul" class="co-ul">
+          <li id="email">our email:hiwi&solorics@microverse.com </li>
+          <li id="email">our phone number:+111000222</li>
+          <li id="email">our address:Module2, Week1-online schooling</li>
+        </ul>
+    </section>
+     <footer>
+     <p>Copyright</p>   
+     <p>...</p>
+    </footer>
 <script src = index.js></script>
 </body>
 </html>
