@@ -44,7 +44,6 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-
   align-items: flex-end;
   margin-left: 50%;
 }
