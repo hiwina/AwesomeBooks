@@ -1,5 +1,5 @@
 body {
-  padding: 20px 30px;
+  padding: 10px 30px;
   margin: 0 auto;
 }
 
@@ -9,6 +9,8 @@ body {
   justify-content: space-between;
   border: 2px solid #000;
   padding: 1%;
+  padding-top: 2px;
+  height: 40px;
 }
 
 .navItems {
@@ -41,7 +43,8 @@ a {
 #book-form {
   display: flex;
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 2rem;
+
   align-items: flex-end;
   margin-left: 50%;
 }
@@ -49,7 +52,7 @@ a {
 #book-form,
 h2 {
   text-align: center;
-  margin-right: 2em;
+  margin-right: 2rem;
 }
 
 #book-list {
@@ -114,7 +117,7 @@ input {
 #date {
   float: right;
   padding-right: 1%;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .add {
@@ -131,6 +134,7 @@ input {
   align-items: center;
   width: 100%;
   font-size: 25px;
+  padding-top: 50px;
 }
 
 footer {
