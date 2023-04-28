@@ -107,7 +107,7 @@ const onload = () => {
 };
 window.addEventListener('load', onload);
 window.addEventListener('load', displayDate);
-window.addEventListener('load',bigBook.displayBooks());
+window.addEventListener('load', bigBook.displayBooks());
 
 bookList.addEventListener('click', onload);
 
