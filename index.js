@@ -93,7 +93,6 @@ const deleteItem = (id) => {
   bigBook.removeBook(id);
 };
 
-window.addEventListener('load', bigBook.displayBooks());
 function displayDate() {
   document.getElementById('date').innerHTML = Date();
 }
@@ -108,6 +107,8 @@ const onload = () => {
 };
 window.addEventListener('load', onload);
 window.addEventListener('load', displayDate);
+window.addEventListener('load',bigBook.displayBooks());
+
 bookList.addEventListener('click', onload);
 
 addBook.addEventListener('click', () => {
