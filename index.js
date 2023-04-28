@@ -120,3 +120,12 @@ addBook.addEventListener('click', () => {
   displayArea.style.display = 'none';
   header.style.display = 'none';
 });
+contact.addEventListener('click', () => {
+  addBook.classList.remove('active');
+  bookList.classList.remove('active');
+  contactSection.style.display = 'flex';
+  addSection.style.display = 'none';
+  displayArea.style.display = 'none';
+  contact.classList.add('active');
+  header.style.display = 'none';
+});
