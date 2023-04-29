@@ -1,10 +1,13 @@
-/* eslint-disable no-use-before-define */
-/* eslint-disable no-unused-vars */
-// select the items
 const form = document.querySelector('#book-form');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const displayArea = document.querySelector('#book-list');
+const bookList = document.querySelector('#list');
+const addBook = document.querySelector('#add-new');
+const contact = document.querySelector('#contact');
+const addSection = document.querySelector('#adds');
+const contactSection = document.querySelector('#contacts');
+const header = document.querySelector('.text-center');
 
 class Books {
   constructor(title, author) {
@@ -16,7 +19,6 @@ class Books {
     const bookTitle = title.value;
     const bookAuthor = author.value;
     const book = new Books(bookTitle, bookAuthor);
-    // Check if local storage is empty
     if (localStorage.getItem('books') === null) {
       const bookShelf = [];
       bookShelf.push(book);
@@ -27,7 +29,6 @@ class Books {
       bookArray.push(book);
       localStorage.setItem('books', JSON.stringify(bookArray));
     }
-    // Clear input
     title.value = '';
     author.value = '';
     this.displayBooks();
@@ -46,7 +47,6 @@ class Books {
       const deleteBtn = document.createElement('div');
       const container = document.createElement('div');
       const words = document.createElement('div');
-      // set attributes
       displayTitle.innerText = `"${element.title}" by`;
       displayAuth.innerText = element.author;
       deleteBtn.innerHTML = `<button class="btn borders removeButton" onclick='deleteItem(${index})'>Remove</button>`;
@@ -54,7 +54,6 @@ class Books {
       container.classList.add('flexing', 'centers');
       words.classList.add('flexing');
       displayAuth.classList.add('word');
-      // apend children
       words.appendChild(displayTitle);
       words.appendChild(displayAuth);
       container.appendChild(words);
@@ -76,10 +75,8 @@ class Books {
   }
 }
 
-// what happens when a person presses submit
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  // Check if title and author field is empty or not
   if (title.value === '' || author.value === '') {
     title.setAttribute('placeholder', 'title');
     author.setAttribute('placeholder', 'author');
@@ -91,8 +88,44 @@ form.addEventListener('submit', (event) => {
 });
 
 const bigBook = new Books();
+// eslint-disable-next-line no-unused-vars
 const deleteItem = (id) => {
   bigBook.removeBook(id);
 };
 
+function displayDate() {
+  document.getElementById('date').innerHTML = Date();
+}
+const onload = () => {
+  contactSection.style.display = 'none';
+  addSection.style.display = 'none';
+  displayArea.style.display = 'block';
+  bookList.classList.add('active');
+  contact.classList.remove('active');
+  addBook.classList.remove('active');
+  header.style.display = 'block';
+};
+window.addEventListener('load', onload);
+window.addEventListener('load', displayDate);
 window.addEventListener('load', bigBook.displayBooks());
+
+bookList.addEventListener('click', onload);
+
+addBook.addEventListener('click', () => {
+  bookList.classList.remove('active');
+  contact.classList.remove('active');
+  contactSection.style.display = 'none';
+  addSection.style.display = 'block';
+  addBook.classList.add('active');
+  displayArea.style.display = 'none';
+  header.style.display = 'none';
+});
+contact.addEventListener('click', () => {
+  addBook.classList.remove('active');
+  bookList.classList.remove('active');
+  contactSection.style.display = 'flex';
+  addSection.style.display = 'none';
+  displayArea.style.display = 'none';
+  contact.classList.add('active');
+  header.style.display = 'none';
+});
